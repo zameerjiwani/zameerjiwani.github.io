@@ -1,0 +1,147 @@
+<!-- about.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+<head id="top">
+    <meta charset="UTF-8">
+    <title>Zameer Jiwani</title>
+
+    <!-- Responsive Web Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/gridiculous.css" type="text/css">
+    <link href="css/hover-min.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    
+    <!-- Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <script>
+        /* Scroll button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('#scrollTop').removeClass('no-display');
+          } else {
+              $('#scrollTop').addClass('no-display');
+          }
+        });
+
+        /* Smooth Scrolling */
+        $(document).ready(function(){
+          $("a").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 500, function(){
+                    window.location.hash = hash;
+                });
+            }
+          });
+        });
+        
+        /* Back button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('#back').removeClass('no-display');
+          } else {
+              $('#back').addClass('no-display');
+          }
+        });
+    </script>
+    
+    <!-- Webpage Icons -->
+    <link rel="icon" type="image/png" href="logo.png"/>
+    
+  
+
+  
+</head>
+
+<!-- WEBPAGE -->
+<!-- Header -->
+<header>
+    <!-- Nav -->
+    <div class="row">
+        <div class="c1"></div>
+        <div class="c10">
+            <a href="index.html">
+                <img src="logo.png" class="logo"/>
+                <div id="name">Zameer Jiwani</div>
+            </a>
+            <div class="optionList" style="float: right">
+                <h3 class="option selected">about</h3>
+                <h3 class="option"><a target="_blank" href="resume.pdf">resume</a></h3>
+            </div>    
+        </div>
+        <div class="c1"></div>
+    </div>
+    <!-- Title -->
+    <div class="row">
+        <div class="c1"></div>
+        <div class="c10">
+            <h1 class="title">
+                Hey, I'm <span style="color: #B31B1B">Zameer</span>.<br>
+                It's nice to meet you.
+            </h1>
+        </div>
+        <div class="c1"></div>
+    </div>
+  </header>
+
+<body>
+    <div class="row content">
+        <div class="c1"></div>
+        <div class="c5">
+            <p>I’m currently a student at <a href="https://www.pisd.edu/shepton" target="_blank" style="color: #B31B1B">Shepton High School</a>. I have a passion for design, technology, and leadership.<br><br>
+
+            Rasied in Texas, I have come to love the outdoors as much as I love technology. I've been to almost half of the National Parks in the US and have over 100 camping nights.<br><br>
+
+
+            Although I am CONSTANTLY running around , I'd love to chat! Shoot me an <a href="mailto:zameer@jiwani.me" target="_blank" style="color: #B31B1B">email</a> and we can work something out.
+
+
+
+        </div>
+        <div class="c1"></div>
+        <div class="c4">
+            <img src="me.png" id="avi">
+        </div>
+        <div class="c1"></div>
+    </div>
+        
+    <!-- Scroll To Top -->
+    <div class="c1">
+        <a href="#top" class="no-display" id="scrollTop"></a>
+        </div>
+        
+    <!-- Back -->
+    <div class="c1">
+        <a href="index.html" class="no-display" id="back"></a>
+    </div>
+</body>
+
+<footer>
+    <div class="row">
+        <div class="c1"></div>
+        <div class="c6">
+            <h4>Thanks for stopping by! If you're interested in working with me, feel free to email me.</h4>
+            <br><h4 style="font-size: 12px;">Design by Zain Khoja</h4>
+        </div>
+        <div class="c2"></div>
+        <div class="c2">
+            <h4 class="links">
+                <a href="https://twitter.com/zameerjiwani"  target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com/zameerjiwani" target="_blank"><i class="fab fa-instagram"></i></a>
+
+            </h4>
+        </div>
+        <div class="c1"></div>
+    </div>
+</footer>
+</html>
